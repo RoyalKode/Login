@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ---------CONTAINER----------*/
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 600px 600px 1fr;
+  grid-template-areas:
+  ". header header ."
+  ". body body ."
+  ;
+  height: 200;
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  grid-template-areas:
+  ". nav";
+}
+  nav {
+    grid-area: nav;
+}
+.body {
+  grid-area: body;
+}
+
+.nav {
+
+}
+
+.page-header {
+
+}
+
+/* MENU LIST HEADER --------------------- */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111111;
+}
