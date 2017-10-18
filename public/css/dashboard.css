@@ -26,7 +26,37 @@ body
   grid-area: f;
 }
 
-    /*--REGISTER-GRIDS--*/
+    /*-----HEADER-----*/
+    .w-head
+    {
+        height: 100px;
+        background: rgba(255, 255, 255, 0.3);
+    }
+    .w-nav > li
+    {
+        display: inline;
+        float: right;
+        margin: 1em;
+        font-size: 20px;
+        transition: .3s;
+
+    }
+    .nav-items
+    {
+        text-decoration: none;
+        color: #eee;
+        transition: .3s;
+    }
+    .nav-items:hover
+    {
+        color: rgba(155, 200, 255, .8);
+        transition: .5s;
+    }
+    li:hover{
+        font-size: 23px;
+        color: #eee;
+        transition: .5s;
+    }
 
 /*-----REGISTER, LOGIN AND LOGOUT-----*/
 
@@ -90,6 +120,7 @@ body
 .input-div-field
 {
   position: relative;
+  margin-top: 1em;
 }
 ::placeholder
 {

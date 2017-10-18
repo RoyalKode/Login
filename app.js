@@ -10,7 +10,7 @@ var users = require('./routes/users');
 // INIT APP
 var app = express();
 
-// VIEW ENGINE
+// VIEW ENGINE-----DEFAULT-LAYOUT-----LAYOUT
 app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', exphbs({defaultLayout: 'layout'}));
 app.set('view engine', 'handlebars');
